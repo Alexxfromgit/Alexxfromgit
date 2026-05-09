@@ -14,12 +14,12 @@ Here are some ideas to get you started:
 -->
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              GITHUB PROFILE README — Alexxfromgit             ║ -->
+<!-- ║              GITHUB PROFILE README — Alexxfromgit            ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <!-- ───────────────  HEADER BANNER  ─────────────── -->
 <a href="https://github.com/Alexxfromgit">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=220&section=header&text=Alexander%20•%20Alexxfromgit&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20DevOps%20%7C%20Infrastructure%20Automation&descSize=18&descAlignY=60&animation=twinkling" alt="header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=220&section=header&text=Alexander%20•%20Alexxfromgit&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20DevOps%20%7C%20Test Automation%20%7C%20Infrastructure%20Automation&descSize=18&descAlignY=60&animation=twinkling" alt="header" />
 </a>
 
 <!-- ───────────────  ANIMATED TAGLINE  ─────────────── -->
@@ -51,8 +51,9 @@ Here are some ideas to get you started:
       - Configuration Management (SaltStack)
       - Bash & Shell Scripting
       - Virtualization (libvirt / virt-install / cloud-init)
-🌱  learning:    Cloud Native, Kubernetes, IaC
-💬  ask_me_about: [Linux, SaltStack, Bash, Virtualization]
+      - Test Automation
+🌱  learning:    Cloud Native, Kubernetes, IaC, AI Agents
+💬  ask_me_about: [Linux, SaltStack, Bash, Virtualization, Test Automation]
 ⚡  fun_fact:    "I'd rather automate it once than do it twice."
 ```
 
@@ -192,17 +193,6 @@ Here are some ideas to get you started:
     <li>📚 Browse all <b>54 repositories</b> → <a href="https://github.com/Alexxfromgit?tab=repositories">github.com/Alexxfromgit?tab=repositories</a></li>
   </ul>
 </details>
-
-<br>
-
-## 🏅 &nbsp;Achievements
-
-| Badge | Achievement | Description |
-|:-----:|:------------|:------------|
-| ⚡ | **Quickdraw** | Closed an issue or pull request within 5 minutes of opening |
-| 🦈 | **Pull Shark ×2** | Multiple pull requests merged into public repositories |
-
-<br>
 
 ## 🤝 &nbsp;Let's Connect
 
