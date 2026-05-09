@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 
 <!-- ───────────────  HEADER BANNER  ─────────────── -->
 <a href="https://github.com/Alexxfromgit">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=220&section=header&text=Alexander%20•%20Alexxfromgit&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20DevOps%20%7C%20Test Automation%20%7C%20Infrastructure%20Automation&descSize=18&descAlignY=60&animation=twinkling" alt="header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=220&section=header&text=Alexander%20•%20Alexxfromgit&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20DevOps%20%7C%20Test%20Automation%20%7C%20Infrastructure%20Automation&descSize=18&descAlignY=60&animation=twinkling" alt="header" />
 </a>
 
 <!-- ───────────────  ANIMATED TAGLINE  ─────────────── -->
