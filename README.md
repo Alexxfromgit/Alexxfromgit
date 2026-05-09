@@ -1,5 +1,3 @@
-## Hi there 👋
-
 <!--
 **Alexxfromgit/Alexxfromgit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -16,7 +14,7 @@ Here are some ideas to get you started:
 -->
 
 <!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              GITHUB PROFILE README — Alexxfromgit            ║ -->
+<!-- ║              GITHUB PROFILE README — Alexxfromgit             ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <!-- ───────────────  HEADER BANNER  ─────────────── -->
@@ -109,10 +107,19 @@ Here are some ideas to get you started:
 
 <p align="center">
   <a href="https://github.com/Alexxfromgit">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=Alexxfromgit&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="github stats" />
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Alexxfromgit&theme=tokyonight" alt="github stats" />
   </a>
   <a href="https://github.com/Alexxfromgit">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alexxfromgit&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="top languages" />
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Alexxfromgit&theme=tokyonight" alt="top languages" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Alexxfromgit">
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Alexxfromgit&theme=tokyonight&utcOffset=2" alt="productive time" />
+  </a>
+  <a href="https://github.com/Alexxfromgit">
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Alexxfromgit&theme=tokyonight" alt="repos per language" />
   </a>
 </p>
 
