@@ -136,7 +136,7 @@ Here are some ideas to get you started:
   </a>
 </p>
 
-<!-- Optional: contribution graph -->
+<!-- Contribution graph -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alexxfromgit&bg_color=0D1117&color=58A6FF&line=58A6FF&point=F7B731&area=true&hide_border=true" alt="contribution graph" />
 </p>
@@ -149,7 +149,7 @@ Here are some ideas to get you started:
 <tr>
   <td width="50%" valign="top">
     <h4>🧂 <a href="https://github.com/Alexxfromgit/DevOps_Salt_formula_users">DevOps · Salt Formula for Users</a></h4>
-    <p>Salt formula for centralised user management across controlled host machines — create, update, and revoke users at scale.</p>
+    <p>Salt formula for centralized user management across controlled host machines — create, update, and revoke users at scale.</p>
     <p>
       <img src="https://img.shields.io/badge/SaltStack-57BCAD?style=flat-square&logo=saltstack&logoColor=white" />
       <img src="https://img.shields.io/badge/Config_Management-2088FF?style=flat-square" />
