@@ -18,9 +18,9 @@
 
 <!-- ───────────────  PROFILE BADGES  ─────────────── -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Alexxfromgit&label=PROFILE+VIEWS&color=8b0010&style=for-the-badge" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=Alexxfromgit&label=PROFILE+VIEWS&color=4a1e5c&style=for-the-badge" alt="profile views" />
   <img src="https://img.shields.io/github/followers/Alexxfromgit?label=FOLLOWERS&style=for-the-badge&color=8b0010&logo=github&logoColor=c8c0b8" alt="followers" />
-  <img src="https://img.shields.io/github/stars/Alexxfromgit?label=STARS&style=for-the-badge&color=8b0010&logo=github&logoColor=c8c0b8" alt="stars" />
+  <img src="https://img.shields.io/github/stars/Alexxfromgit?label=STARS&style=for-the-badge&color=4a1e5c&logo=github&logoColor=c8c0b8" alt="stars" />
   <img src="https://img.shields.io/badge/UKRAINE-%E2%9C%BF-8b0010?style=for-the-badge&logoColor=c8c0b8" alt="Ukraine" />
 </p>
 
@@ -35,16 +35,16 @@
 
 ```yaml
 👤  identity:    Alexander
-💼  role:        Software Engineer
+💼  role:        Software Engineer In Test
 🏢  company:     Big Deals
 🌍  origin:      Ukraine 🇺🇦
 🎯  focus:
-      - Infrastructure Automation
+      - Test Automation & QA Infrastructure
       - Configuration Management (SaltStack)
       - Bash & Shell Scripting
       - Virtualization · libvirt · cloud-init
 🌱  studying:    Cloud Native · Kubernetes · IaC
-💬  ask_about:   [Linux, SaltStack, Bash, Virtualization]
+💬  ask_about:   [Linux, SaltStack, Bash, Test Automation]
 ⚡  philosophy:  "automate it once — never again"
 ```
 
@@ -120,36 +120,36 @@
 
 <p align="center">
   <a href="https://github.com/Alexxfromgit">
-    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Alexxfromgit&theme=radical" alt="github stats" />
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Alexxfromgit&theme=dracula" alt="github stats" />
   </a>
   <a href="https://github.com/Alexxfromgit">
-    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Alexxfromgit&theme=radical" alt="top languages" />
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Alexxfromgit&theme=dracula" alt="top languages" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Alexxfromgit">
-    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Alexxfromgit&theme=radical&utcOffset=2" alt="productive time" />
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Alexxfromgit&theme=dracula&utcOffset=2" alt="productive time" />
   </a>
   <a href="https://github.com/Alexxfromgit">
-    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Alexxfromgit&theme=radical" alt="repos per language" />
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Alexxfromgit&theme=dracula" alt="repos per language" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Alexxfromgit">
-    <img src="https://streak-stats.demolab.com?user=Alexxfromgit&hide_border=true&background=0a0a0f&stroke=c41e3a&ring=c41e3a&fire=ff2a4a&currStreakNum=c8c0b8&currStreakLabel=c41e3a&sideNums=c8c0b8&sideLabels=8b0010&dates=5a4a52" alt="github streak" />
+    <img src="https://streak-stats.demolab.com?user=Alexxfromgit&hide_border=true&background=0a0a0f&stroke=8b3aae&ring=c41e3a&fire=ff2a4a&currStreakNum=c8c0b8&currStreakLabel=8b3aae&sideNums=c8c0b8&sideLabels=4a1e5c&dates=5a4a52" alt="github streak" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Alexxfromgit">
-    <img src="https://github-profile-trophy.vercel.app/?username=Alexxfromgit&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=Alexxfromgit&theme=dracula&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="trophies" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alexxfromgit&bg_color=0a0a0f&color=c41e3a&line=c41e3a&point=ff2a4a&area=true&area_color=8b0010&hide_border=true" alt="contribution graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alexxfromgit&bg_color=0a0a0f&color=8b3aae&line=8b3aae&point=c41e3a&area=true&area_color=4a1e5c&hide_border=true" alt="contribution graph" />
 </p>
 
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
@@ -230,7 +230,7 @@
     <img src="https://img.shields.io/badge/GitHub-0a0a0f?style=for-the-badge&logo=github&logoColor=c8c0b8" alt="GitHub" />
   </a>
   <a href="https://github.com/Alexxfromgit?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-0a0a0f?style=for-the-badge&logo=git&logoColor=c41e3a" alt="Repositories" />
+    <img src="https://img.shields.io/badge/Repositories-0a0a0f?style=for-the-badge&logo=git&logoColor=8b3aae" alt="Repositories" />
   </a>
 </p>
 
@@ -240,14 +240,14 @@
 ## &nbsp;✦&nbsp;&nbsp;Thought&nbsp;of&nbsp;the&nbsp;Day
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="dev quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula" alt="dev quote" />
 </p>
 
 <br>
 
 <!-- ───────────────  FOOTER  ─────────────── -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=8B0000&height=120&section=footer&text=THANKS%20FOR%20STOPPING%20BY&fontSize=20&fontColor=c8c0b8&fontAlignY=70" alt="footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=4a1e5c&height=120&section=footer&text=THANKS%20FOR%20STOPPING%20BY&fontSize=20&fontColor=c8c0b8&fontAlignY=70" alt="footer" />
 </p>
 
 <p align="center">

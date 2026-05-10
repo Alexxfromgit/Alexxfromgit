@@ -1,198 +1,355 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="亚历山大大帝 - Software Engineer banner">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="亚历山大大帝 - Software Engineer In Test banner">
   <defs>
-    <!-- Deep space background gradient -->
-    <radialGradient id="bgGrad" cx="50%" cy="45%" r="75%">
-      <stop offset="0%" stop-color="#1c1422"/>
-      <stop offset="40%" stop-color="#0a070d"/>
-      <stop offset="100%" stop-color="#000000"/>
+    <!-- ATMOSPHERIC CLOUD PATCHES — soft cool-grey blobs, very subtle -->
+    <radialGradient id="cloud1" cx="22%" cy="48%" r="32%">
+      <stop offset="0%"   stop-color="#3a3742" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud2" cx="78%" cy="42%" r="32%">
+      <stop offset="0%"   stop-color="#322f3a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud3" cx="15%" cy="80%" r="22%">
+      <stop offset="0%"   stop-color="#2c2935" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud4" cx="85%" cy="78%" r="22%">
+      <stop offset="0%"   stop-color="#2e2b38" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud5" cx="50%" cy="15%" r="20%">
+      <stop offset="0%"   stop-color="#28262e" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud6" cx="50%" cy="92%" r="22%">
+      <stop offset="0%"   stop-color="#2a2832" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Blood gradient for the blindfold -->
+    <!-- VIGNETTE — strong corner darkening -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="40%"  stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95"/>
+    </radialGradient>
+
+    <!-- BLOOD GRADIENT for the (now subtle) strip -->
     <linearGradient id="bloodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#3a0006" stop-opacity="0.75"/>
+      <stop offset="0%"   stop-color="#3a0006" stop-opacity="0.6"/>
       <stop offset="20%"  stop-color="#7a000d"/>
       <stop offset="50%"  stop-color="#c41e3a"/>
       <stop offset="80%"  stop-color="#7a000d"/>
-      <stop offset="100%" stop-color="#3a0006" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#3a0006" stop-opacity="0.6"/>
     </linearGradient>
 
-    <!-- Nebula dust gradient -->
-    <radialGradient id="dust" cx="30%" cy="60%" r="50%">
-      <stop offset="0%"   stop-color="#3a1f3a" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="dust2" cx="80%" cy="40%" r="40%">
-      <stop offset="0%"   stop-color="#1f0a1f" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
+    <!-- GRAIN TEXTURE — fine noise (renders only in real browsers, bonus texture) -->
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="11" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.55   0 0 0 0 0.55   0 0 0 0 0.6   0 0 0 0.4 0"/>
+    </filter>
 
-    <!-- Turbulent edge filter for blindfold -->
+    <!-- PROCEDURAL DENSE STARFIELD — bonus in browsers, won't show in cairosvg preview -->
+    <filter id="starfield" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="2.4" numOctaves="1" seed="9" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 28 -27"/>
+    </filter>
+
+    <!-- TURBULENT BLINDFOLD edge filter -->
     <filter id="rough" x="-10%" y="-50%" width="120%" height="200%">
       <feTurbulence type="fractalNoise" baseFrequency="0.025 0.06" numOctaves="3" seed="7"/>
       <feDisplacementMap in="SourceGraphic" scale="14"/>
     </filter>
 
-    <!-- Soft red glow -->
+    <!-- SOFT RED GLOW -->
     <filter id="redGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feColorMatrix in="blur" values="1 0 0 0 0.77   0 1 0 0 0.12   0 0 1 0 0.23   0 0 0 1 0"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
-        <feMergeNode/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <!-- Grain texture filter -->
-    <filter id="grain">
-      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
-      <feColorMatrix values="0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0.4 0"/>
-      <feComposite in2="SourceGraphic" operator="in"/>
-    </filter>
   </defs>
 
-  <!-- Background layers -->
-  <rect width="1200" height="360" fill="url(#bgGrad)"/>
-  <rect width="1200" height="360" fill="url(#dust)"/>
-  <rect width="1200" height="360" fill="url(#dust2)"/>
+  <!-- BASE: pure black -->
+  <rect width="1200" height="360" fill="#000000"/>
 
-  <!-- Static distant stars -->
+  <!-- CLOUD PATCHES: soft organic blobs simulating atmospheric fog -->
+  <rect width="1200" height="360" fill="url(#cloud1)"/>
+  <rect width="1200" height="360" fill="url(#cloud2)"/>
+  <rect width="1200" height="360" fill="url(#cloud3)"/>
+  <rect width="1200" height="360" fill="url(#cloud4)"/>
+  <rect width="1200" height="360" fill="url(#cloud5)"/>
+  <rect width="1200" height="360" fill="url(#cloud6)"/>
+
+  <!-- HAND-PLACED STARS (140 of them) -->
+  <!-- STATIC SCATTERED STARS -->
   <g fill="#ffffff">
-    <circle cx="80"   cy="40"  r="0.6" opacity="0.7"/>
-    <circle cx="160"  cy="110" r="0.5" opacity="0.5"/>
-    <circle cx="220"  cy="60"  r="0.4" opacity="0.6"/>
-    <circle cx="290"  cy="140" r="0.7" opacity="0.5"/>
-    <circle cx="380"  cy="80"  r="0.4" opacity="0.7"/>
-    <circle cx="460"  cy="50"  r="0.5" opacity="0.6"/>
-    <circle cx="540"  cy="100" r="0.3" opacity="0.5"/>
-    <circle cx="630"  cy="40"  r="0.6" opacity="0.6"/>
-    <circle cx="720"  cy="130" r="0.4" opacity="0.7"/>
-    <circle cx="810"  cy="70"  r="0.5" opacity="0.5"/>
-    <circle cx="900"  cy="120" r="0.4" opacity="0.6"/>
-    <circle cx="990"  cy="50"  r="0.6" opacity="0.7"/>
-    <circle cx="1080" cy="100" r="0.5" opacity="0.6"/>
-    <circle cx="1140" cy="140" r="0.3" opacity="0.5"/>
-    <circle cx="60"   cy="240" r="0.5" opacity="0.6"/>
-    <circle cx="180"  cy="290" r="0.4" opacity="0.5"/>
-    <circle cx="270"  cy="320" r="0.6" opacity="0.7"/>
-    <circle cx="370"  cy="280" r="0.4" opacity="0.6"/>
-    <circle cx="460"  cy="330" r="0.5" opacity="0.5"/>
-    <circle cx="580"  cy="300" r="0.3" opacity="0.7"/>
-    <circle cx="700"  cy="280" r="0.6" opacity="0.6"/>
-    <circle cx="800"  cy="320" r="0.4" opacity="0.5"/>
-    <circle cx="900"  cy="290" r="0.5" opacity="0.7"/>
-    <circle cx="1010" cy="330" r="0.4" opacity="0.6"/>
-    <circle cx="1100" cy="260" r="0.6" opacity="0.5"/>
+    <circle cx="243" cy="27" r="0.5" opacity="0.3"/>
+    <circle cx="300" cy="67" r="0.4" opacity="0.7"/>
+    <circle cx="193" cy="317" r="0.4" opacity="0.3"/>
+    <circle cx="462" cy="134" r="0.4" opacity="0.3"/>
+    <circle cx="422" cy="294" r="0.4" opacity="0.5"/>
+    <circle cx="584" cy="18" r="0.5" opacity="0.3"/>
+    <circle cx="880" cy="189" r="0.3" opacity="0.3"/>
+    <circle cx="704" cy="67" r="0.3" opacity="0.3"/>
+    <circle cx="719" cy="324" r="0.3" opacity="0.3"/>
+    <circle cx="955" cy="289" r="0.3" opacity="0.9"/>
+    <circle cx="176" cy="297" r="0.3" opacity="0.5"/>
+    <circle cx="755" cy="310" r="0.3" opacity="0.3"/>
+    <circle cx="481" cy="163" r="1.2" opacity="0.7"/>
+    <circle cx="221" cy="209" r="0.3" opacity="0.5"/>
+    <circle cx="762" cy="98" r="0.3" opacity="0.3"/>
+    <circle cx="561" cy="51" r="0.4" opacity="0.3"/>
+    <circle cx="516" cy="98" r="0.4" opacity="0.3"/>
+    <circle cx="1155" cy="127" r="0.4" opacity="0.7"/>
+    <circle cx="129" cy="132" r="0.5" opacity="0.7"/>
+    <circle cx="836" cy="152" r="0.3" opacity="0.9"/>
+    <circle cx="1176" cy="176" r="0.3" opacity="0.5"/>
+    <circle cx="954" cy="88" r="0.3" opacity="0.3"/>
+    <circle cx="1164" cy="290" r="0.3" opacity="0.5"/>
+    <circle cx="832" cy="200" r="0.3" opacity="0.9"/>
+    <circle cx="1058" cy="267" r="0.3" opacity="0.3"/>
+    <circle cx="239" cy="93" r="0.4" opacity="0.7"/>
+    <circle cx="879" cy="320" r="0.3" opacity="0.5"/>
+    <circle cx="973" cy="285" r="0.3" opacity="0.5"/>
+    <circle cx="38" cy="73" r="0.4" opacity="0.5"/>
+    <circle cx="561" cy="343" r="0.3" opacity="0.3"/>
+    <circle cx="338" cy="247" r="0.3" opacity="0.7"/>
+    <circle cx="554" cy="271" r="0.5" opacity="0.5"/>
+    <circle cx="232" cy="335" r="0.3" opacity="0.5"/>
+    <circle cx="422" cy="93" r="0.3" opacity="0.3"/>
+    <circle cx="1101" cy="15" r="0.4" opacity="0.5"/>
+    <circle cx="244" cy="200" r="0.7" opacity="0.7"/>
+    <circle cx="644" cy="137" r="0.3" opacity="0.7"/>
+    <circle cx="176" cy="58" r="0.5" opacity="0.7"/>
+    <circle cx="1105" cy="79" r="0.3" opacity="0.5"/>
+    <circle cx="1140" cy="99" r="0.3" opacity="0.7"/>
+    <circle cx="881" cy="123" r="0.7" opacity="0.7"/>
+    <circle cx="426" cy="174" r="0.3" opacity="0.7"/>
+    <circle cx="779" cy="239" r="0.7" opacity="0.5"/>
+    <circle cx="522" cy="130" r="0.3" opacity="0.3"/>
+    <circle cx="1149" cy="132" r="0.4" opacity="0.3"/>
+    <circle cx="135" cy="132" r="0.3" opacity="0.3"/>
+    <circle cx="691" cy="51" r="0.4" opacity="0.3"/>
+    <circle cx="1009" cy="124" r="0.4" opacity="0.7"/>
+    <circle cx="1184" cy="310" r="0.4" opacity="0.7"/>
+    <circle cx="848" cy="112" r="0.3" opacity="0.7"/>
+    <circle cx="740" cy="231" r="0.4" opacity="0.7"/>
+    <circle cx="125" cy="345" r="0.3" opacity="0.5"/>
+    <circle cx="709" cy="70" r="0.3" opacity="0.3"/>
+    <circle cx="933" cy="86" r="0.4" opacity="0.3"/>
+    <circle cx="526" cy="53" r="0.4" opacity="0.7"/>
+    <circle cx="1142" cy="65" r="0.3" opacity="0.9"/>
+    <circle cx="45" cy="62" r="0.7" opacity="0.7"/>
+    <circle cx="355" cy="223" r="0.4" opacity="0.3"/>
+    <circle cx="836" cy="45" r="0.3" opacity="0.3"/>
+    <circle cx="814" cy="150" r="0.7" opacity="0.7"/>
+    <circle cx="599" cy="231" r="0.4" opacity="0.7"/>
+    <circle cx="1153" cy="264" r="0.3" opacity="0.3"/>
+    <circle cx="134" cy="311" r="0.5" opacity="0.3"/>
+    <circle cx="657" cy="44" r="0.3" opacity="0.5"/>
+    <circle cx="1102" cy="95" r="0.3" opacity="0.5"/>
+    <circle cx="395" cy="50" r="0.4" opacity="0.7"/>
+    <circle cx="496" cy="221" r="0.3" opacity="0.7"/>
+    <circle cx="519" cy="311" r="0.4" opacity="0.5"/>
+    <circle cx="873" cy="313" r="0.4" opacity="0.3"/>
+    <circle cx="549" cy="119" r="0.4" opacity="0.3"/>
+    <circle cx="558" cy="217" r="0.3" opacity="0.5"/>
+    <circle cx="951" cy="176" r="0.7" opacity="0.9"/>
+    <circle cx="34" cy="249" r="0.4" opacity="0.5"/>
+    <circle cx="219" cy="52" r="0.4" opacity="0.5"/>
+    <circle cx="286" cy="193" r="0.7" opacity="0.7"/>
+    <circle cx="771" cy="160" r="0.3" opacity="0.7"/>
+    <circle cx="634" cy="328" r="1.2" opacity="0.7"/>
+    <circle cx="1098" cy="19" r="0.4" opacity="0.5"/>
+    <circle cx="227" cy="83" r="0.3" opacity="0.7"/>
+    <circle cx="1148" cy="94" r="0.3" opacity="0.5"/>
+    <circle cx="717" cy="119" r="0.4" opacity="0.7"/>
+    <circle cx="1050" cy="265" r="0.3" opacity="0.9"/>
+    <circle cx="119" cy="62" r="0.4" opacity="0.7"/>
+    <circle cx="105" cy="16" r="0.3" opacity="0.3"/>
+    <circle cx="551" cy="97" r="0.5" opacity="0.5"/>
+    <circle cx="890" cy="302" r="0.3" opacity="0.3"/>
+    <circle cx="320" cy="294" r="0.3" opacity="0.5"/>
+    <circle cx="1146" cy="90" r="0.4" opacity="0.3"/>
+    <circle cx="761" cy="35" r="0.7" opacity="0.3"/>
+    <circle cx="526" cy="67" r="0.3" opacity="0.5"/>
+    <circle cx="847" cy="332" r="0.5" opacity="0.9"/>
+    <circle cx="499" cy="98" r="0.9" opacity="0.7"/>
+    <circle cx="859" cy="27" r="0.3" opacity="0.9"/>
+    <circle cx="858" cy="142" r="0.3" opacity="0.7"/>
+    <circle cx="236" cy="210" r="0.7" opacity="0.7"/>
+    <circle cx="470" cy="117" r="0.5" opacity="0.5"/>
+    <circle cx="640" cy="131" r="0.3" opacity="0.7"/>
+    <circle cx="831" cy="183" r="0.3" opacity="0.3"/>
+    <circle cx="586" cy="194" r="0.4" opacity="0.5"/>
+    <circle cx="1113" cy="184" r="0.9" opacity="0.3"/>
+    <circle cx="549" cy="106" r="0.4" opacity="0.9"/>
+    <circle cx="93" cy="70" r="0.4" opacity="0.3"/>
+    <circle cx="657" cy="238" r="0.4" opacity="0.5"/>
+    <circle cx="803" cy="310" r="0.3" opacity="0.3"/>
+    <circle cx="908" cy="15" r="0.4" opacity="0.7"/>
+    <circle cx="418" cy="201" r="0.4" opacity="0.9"/>
+    <circle cx="691" cy="334" r="0.3" opacity="0.7"/>
+    <circle cx="630" cy="274" r="0.3" opacity="0.5"/>
+    <circle cx="839" cy="166" r="0.4" opacity="0.3"/>
+    <circle cx="791" cy="104" r="0.4" opacity="0.3"/>
+    <circle cx="1137" cy="15" r="0.3" opacity="0.3"/>
+    <circle cx="674" cy="253" r="0.4" opacity="0.7"/>
+    <circle cx="1061" cy="257" r="0.5" opacity="0.9"/>
+    <circle cx="362" cy="58" r="0.3" opacity="0.7"/>
+    <circle cx="701" cy="62" r="0.5" opacity="0.7"/>
+    <circle cx="650" cy="130" r="0.5" opacity="0.3"/>
+    <circle cx="109" cy="140" r="1.2" opacity="0.5"/>
+    <circle cx="164" cy="248" r="0.4" opacity="0.5"/>
+    <circle cx="413" cy="211" r="0.4" opacity="0.3"/>
+    <circle cx="26" cy="69" r="0.5" opacity="0.3"/>
+    <circle cx="1075" cy="252" r="0.3" opacity="0.3"/>
+    <circle cx="263" cy="248" r="0.3" opacity="0.5"/>
+    <circle cx="1102" cy="301" r="0.4" opacity="0.9"/>
+    <circle cx="921" cy="328" r="0.5" opacity="0.7"/>
+    <circle cx="888" cy="295" r="0.4" opacity="0.3"/>
+    <circle cx="987" cy="245" r="0.3" opacity="0.3"/>
+    <circle cx="582" cy="281" r="0.4" opacity="0.3"/>
+    <circle cx="915" cy="54" r="0.5" opacity="0.3"/>
+    <circle cx="702" cy="178" r="0.7" opacity="0.3"/>
+    <circle cx="323" cy="133" r="0.3" opacity="0.3"/>
+    <circle cx="453" cy="47" r="0.4" opacity="0.3"/>
+    <circle cx="969" cy="227" r="0.3" opacity="0.7"/>
+    <circle cx="812" cy="314" r="0.9" opacity="0.3"/>
+    <circle cx="794" cy="259" r="0.3" opacity="0.5"/>
+    <circle cx="813" cy="229" r="0.4" opacity="0.7"/>
+    <circle cx="466" cy="264" r="0.3" opacity="0.5"/>
+    <circle cx="74" cy="214" r="0.3" opacity="0.7"/>
+    <circle cx="843" cy="99" r="0.5" opacity="0.9"/>
+    <circle cx="1108" cy="28" r="0.7" opacity="0.5"/>
+    <circle cx="70" cy="57" r="0.4" opacity="0.3"/>
   </g>
 
-  <!-- Animated twinkling stars (brighter, larger) -->
+  <!-- ANIMATED TWINKLING ACCENT STARS -->
   <g fill="#ffffff">
-    <circle cx="140" cy="80" r="1.4">
-      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.4s" repeatCount="indefinite"/>
+    <circle cx="995" cy="123" r="0.8">
+      <animate attributeName="opacity" values="0.15;0.96;0.15" dur="3.8s" begin="0.6s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="350" cy="50" r="1.1">
-      <animate attributeName="opacity" values="0.2;0.95;0.2" dur="4.2s" begin="1s" repeatCount="indefinite"/>
+    <circle cx="826" cy="172" r="1.4">
+      <animate attributeName="opacity" values="0.11;0.85;0.11" dur="5.0s" begin="0.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="610" cy="120" r="1.3">
-      <animate attributeName="opacity" values="0.1;1;0.1" dur="3.8s" begin="0.4s" repeatCount="indefinite"/>
+    <circle cx="156" cy="209" r="1.0">
+      <animate attributeName="opacity" values="0.11;0.85;0.11" dur="3.0s" begin="2.9s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="850" cy="60" r="1.2">
-      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4.6s" begin="2.1s" repeatCount="indefinite"/>
+    <circle cx="556" cy="132" r="1.5">
+      <animate attributeName="opacity" values="0.17;0.87;0.17" dur="4.5s" begin="0.7s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1060" cy="90" r="1.5">
-      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.1s" begin="0.8s" repeatCount="indefinite"/>
+    <circle cx="496" cy="268" r="1.4">
+      <animate attributeName="opacity" values="0.19;0.96;0.19" dur="4.9s" begin="0.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="220" cy="320" r="1.2">
-      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="5.1s" begin="1.6s" repeatCount="indefinite"/>
+    <circle cx="284" cy="113" r="1.6">
+      <animate attributeName="opacity" values="0.15;0.95;0.15" dur="3.1s" begin="0.1s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="500" cy="280" r="1.3">
-      <animate attributeName="opacity" values="0.1;0.95;0.1" dur="3.9s" begin="2.4s" repeatCount="indefinite"/>
+    <circle cx="818" cy="233" r="1.6">
+      <animate attributeName="opacity" values="0.22;0.89;0.22" dur="3.3s" begin="1.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="780" cy="310" r="1.1">
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.5s" begin="0.2s" repeatCount="indefinite"/>
+    <circle cx="667" cy="91" r="1.4">
+      <animate attributeName="opacity" values="0.18;0.95;0.18" dur="4.3s" begin="0.1s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1020" cy="280" r="1.4">
-      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.6s" begin="3s" repeatCount="indefinite"/>
+    <circle cx="191" cy="289" r="1.3">
+      <animate attributeName="opacity" values="0.17;0.92;0.17" dur="2.8s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="791" cy="265" r="1.4">
+      <animate attributeName="opacity" values="0.24;0.89;0.24" dur="4.0s" begin="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="268" r="1.1">
+      <animate attributeName="opacity" values="0.23;0.97;0.23" dur="4.8s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="227" cy="172" r="1.5">
+      <animate attributeName="opacity" values="0.19;0.91;0.19" dur="3.5s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="108" cy="283" r="1.5">
+      <animate attributeName="opacity" values="0.22;0.9;0.22" dur="3.3s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="615" cy="314" r="0.8">
+      <animate attributeName="opacity" values="0.21;0.92;0.21" dur="5.4s" begin="0.3s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Decorative corner brackets (gothic frame hint) -->
-  <g stroke="#3a0006" stroke-width="1" fill="none" opacity="0.6">
+
+  <!-- GRAIN OVERLAY: very subtle gritty noise (browsers only render this — won't show in cairosvg preview) -->
+  <rect width="1200" height="360" fill="white" filter="url(#grain)" opacity="0.04"/>
+
+  <!-- VIGNETTE: darken edges (always renders) -->
+  <rect width="1200" height="360" fill="url(#vignette)"/>
+
+  <!-- CORNER BRACKETS: faint gothic frame hint -->
+  <g stroke="#3a0006" stroke-width="1" fill="none" opacity="0.55">
     <path d="M 20 20 L 20 60 M 20 20 L 60 20"/>
     <path d="M 1180 20 L 1180 60 M 1180 20 L 1140 20"/>
     <path d="M 20 340 L 20 300 M 20 340 L 60 340"/>
     <path d="M 1180 340 L 1180 300 M 1180 340 L 1140 340"/>
   </g>
 
-  <!-- Main title with glow -->
-  <text x="600" y="195" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700"
-        fill="#c8c0b8" text-anchor="middle" letter-spacing="14" filter="url(#redGlow)">
+  <!-- MAIN TITLE: 亚历山大大帝 (Alexander the Great) -->
+  <text x="600" y="208" font-family="'Noto Serif CJK SC', 'Source Han Serif SC', STSong, 'Songti SC', SimSun, 'Microsoft YaHei', serif" font-size="72" font-weight="700"
+        fill="#d4ccc0" text-anchor="middle" letter-spacing="8">
     亚历山大大帝
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="6s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Title subtle breathing -->
-  <text x="600" y="195" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700"
-        fill="#c8c0b8" text-anchor="middle" letter-spacing="14" opacity="0.9">
-    亚历山大大帝
-    <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Red blindfold across the eye-line of the title — chaotic, organic -->
+  <!-- SUBTLE RED STAIN STRIP across eye-line — low opacity so title reads clearly -->
   <g filter="url(#rough)">
-    <rect x="290" y="148" width="620" height="42" fill="url(#bloodGrad)" opacity="0.9">
-      <animate attributeName="opacity" values="0.82;0.98;0.82" dur="4.5s" repeatCount="indefinite"/>
+    <rect x="280" y="148" width="640" height="42" fill="url(#bloodGrad)" opacity="0.4">
+      <animate attributeName="opacity" values="0.32;0.5;0.32" dur="4.5s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <!-- Tangled red threads woven on top of the blindfold -->
-  <g stroke="#d62246" stroke-width="1.1" fill="none" opacity="0.8" stroke-linecap="round">
-    <path d="M 295 158 Q 360 145, 420 162 T 540 152 T 660 168 T 780 154 T 905 162"/>
-    <path d="M 300 172 Q 380 185, 450 168 T 570 182 T 690 165 T 810 178 T 905 172" opacity="0.7"/>
-    <path d="M 305 180 Q 400 162, 470 184 T 590 168 T 710 186 T 825 170 T 900 184" opacity="0.65"/>
-    <path d="M 295 186 Q 370 170, 440 188 T 560 174 T 680 190 T 800 175 T 905 188" opacity="0.55"/>
-    <path d="M 310 152 Q 420 178, 490 154 T 610 180 T 730 156 T 850 180 T 900 154" opacity="0.5"/>
+  <!-- TANGLED RED THREADS -->
+  <g stroke="#d62246" stroke-width="1.1" fill="none" opacity="0.7" stroke-linecap="round" filter="url(#redGlow)">
+    <path d="M 290 158 Q 360 145, 420 162 T 540 152 T 660 168 T 780 154 T 905 162"/>
+    <path d="M 295 172 Q 380 185, 450 168 T 570 182 T 690 165 T 810 178 T 905 172" opacity="0.6"/>
+    <path d="M 300 180 Q 400 162, 470 184 T 590 168 T 710 186 T 825 170 T 905 184" opacity="0.55"/>
+    <path d="M 290 186 Q 370 170, 440 188 T 560 174 T 680 190 T 800 175 T 905 188" opacity="0.45"/>
+    <path d="M 305 152 Q 420 178, 490 154 T 610 180 T 730 156 T 850 180 T 900 154" opacity="0.4"/>
   </g>
 
-  <!-- Splattered drops near blindfold -->
+  <!-- SPLATTER DROPLETS at strip ends -->
   <g fill="#a30015">
-    <circle cx="270" cy="165" r="1.5" opacity="0.8"/>
-    <circle cx="265" cy="178" r="1" opacity="0.6"/>
-    <circle cx="935" cy="170" r="1.8" opacity="0.8"/>
-    <circle cx="942" cy="162" r="1" opacity="0.6"/>
-    <circle cx="950" cy="180" r="1.3" opacity="0.7"/>
+    <circle cx="265" cy="165" r="1.5" opacity="0.7"/>
+    <circle cx="260" cy="178" r="1" opacity="0.55"/>
+    <circle cx="935" cy="170" r="1.8" opacity="0.7"/>
+    <circle cx="942" cy="162" r="1" opacity="0.55"/>
+    <circle cx="950" cy="180" r="1.3" opacity="0.6"/>
   </g>
 
-  <!-- Subtitle -->
-  <text x="600" y="245" font-family="'Courier New', 'Consolas', monospace" font-size="15" font-weight="600"
-        fill="#8b0010" text-anchor="middle" letter-spacing="6">
-    SOFTWARE  ENGINEER  ◆  DEVOPS  ◆  INFRASTRUCTURE
+  <!-- SUBTITLE -->
+  <text x="600" y="252" font-family="'Courier New', 'Consolas', monospace" font-size="13" font-weight="600"
+        fill="#8b0010" text-anchor="middle" letter-spacing="4">
+    SOFTWARE  ENGINEER  IN  TEST  ◆  DEVOPS  ◆  INFRASTRUCTURE
   </text>
 
-  <!-- Animated blood drips -->
+  <!-- ANIMATED BLOOD DRIPS -->
   <g fill="#a30015">
-    <ellipse cx="380" cy="285" rx="1.8" ry="6" opacity="0.55">
+    <ellipse cx="380" cy="290" rx="1.8" ry="6" opacity="0.5">
       <animate attributeName="ry" values="4;12;4" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="278;292;278" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.75;0.3" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="283;297;283" dur="6s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="600" cy="285" rx="2" ry="8" opacity="0.65">
+    <ellipse cx="600" cy="290" rx="2" ry="8" opacity="0.6">
       <animate attributeName="ry" values="6;16;6" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.35;0.9;0.35" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="278;294;278" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.85;0.35" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="283;299;283" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="820" cy="285" rx="1.8" ry="7" opacity="0.55">
+    <ellipse cx="820" cy="290" rx="1.8" ry="7" opacity="0.5">
       <animate attributeName="ry" values="5;13;5" dur="8s" begin="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="8s" begin="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="278;292;278" dur="8s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.75;0.3" dur="8s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="283;297;283" dur="8s" begin="2.8s" repeatCount="indefinite"/>
     </ellipse>
   </g>
 
-  <!-- Username tag at bottom with separators -->
+  <!-- USERNAME TAG -->
   <g>
-    <line x1="450" y1="328" x2="540" y2="328" stroke="#3a0006" stroke-width="0.6"/>
-    <text x="600" y="332" font-family="'Courier New', 'Consolas', monospace" font-size="11" font-weight="500"
+    <line x1="450" y1="333" x2="540" y2="333" stroke="#3a0006" stroke-width="0.6"/>
+    <text x="600" y="337" font-family="'Courier New', 'Consolas', monospace" font-size="11" font-weight="500"
           fill="#5a4a52" text-anchor="middle" letter-spacing="4">
       @ A L E X X F R O M G I T
     </text>
-    <line x1="660" y1="328" x2="750" y2="328" stroke="#3a0006" stroke-width="0.6"/>
+    <line x1="660" y1="333" x2="750" y2="333" stroke="#3a0006" stroke-width="0.6"/>
   </g>
 </svg>
