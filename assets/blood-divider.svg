@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" preserveAspectRatio="xMidYMid meet" role="presentation">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#3a0006" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#c41e3a" stop-opacity="1"/>
+      <stop offset="85%"  stop-color="#3a0006" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="diamondGlow">
+      <stop offset="0%" stop-color="#c41e3a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#c41e3a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main horizontal line -->
+  <line x1="0" y1="15" x2="1200" y2="15" stroke="url(#lineGrad)" stroke-width="1.4"/>
+
+  <!-- Faint glow halo behind diamond -->
+  <circle cx="600" cy="15" r="22" fill="url(#diamondGlow)">
+    <animate attributeName="r" values="18;26;18" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Center diamond ornament -->
+  <g transform="translate(600 15)" filter="url(#softGlow)">
+    <path d="M 0 -7 L 7 0 L 0 7 L -7 0 Z" fill="#c41e3a" stroke="#3a0006" stroke-width="0.6">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 -3.5 L 3.5 0 L 0 3.5 L -3.5 0 Z" fill="#3a0006"/>
+  </g>
+
+  <!-- Traveling pulse particle -->
+  <circle r="2.5" fill="#ff2a4a" opacity="0">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M 0 15 L 1200 15"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.1;0.3;0.7;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="1.5;3.5;1.5" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Counter-traveling smaller particle -->
+  <circle r="1.5" fill="#c41e3a" opacity="0">
+    <animateMotion dur="9s" begin="2s" repeatCount="indefinite" path="M 1200 15 L 0 15"/>
+    <animate attributeName="opacity" values="0;0;0.7;0.7;0" keyTimes="0;0.15;0.4;0.7;1" dur="9s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

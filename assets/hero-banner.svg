@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="亚历山大大帝 - Software Engineer banner">
+  <defs>
+    <!-- Deep space background gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#1c1422"/>
+      <stop offset="40%" stop-color="#0a070d"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Blood gradient for the blindfold -->
+    <linearGradient id="bloodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#3a0006" stop-opacity="0.75"/>
+      <stop offset="20%"  stop-color="#7a000d"/>
+      <stop offset="50%"  stop-color="#c41e3a"/>
+      <stop offset="80%"  stop-color="#7a000d"/>
+      <stop offset="100%" stop-color="#3a0006" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Nebula dust gradient -->
+    <radialGradient id="dust" cx="30%" cy="60%" r="50%">
+      <stop offset="0%"   stop-color="#3a1f3a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dust2" cx="80%" cy="40%" r="40%">
+      <stop offset="0%"   stop-color="#1f0a1f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Turbulent edge filter for blindfold -->
+    <filter id="rough" x="-10%" y="-50%" width="120%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.025 0.06" numOctaves="3" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="14"/>
+    </filter>
+
+    <!-- Soft red glow -->
+    <filter id="redGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" values="1 0 0 0 0.77   0 1 0 0 0.12   0 0 1 0 0.23   0 0 0 1 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grain texture filter -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0.4 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" fill="url(#dust)"/>
+  <rect width="1200" height="360" fill="url(#dust2)"/>
+
+  <!-- Static distant stars -->
+  <g fill="#ffffff">
+    <circle cx="80"   cy="40"  r="0.6" opacity="0.7"/>
+    <circle cx="160"  cy="110" r="0.5" opacity="0.5"/>
+    <circle cx="220"  cy="60"  r="0.4" opacity="0.6"/>
+    <circle cx="290"  cy="140" r="0.7" opacity="0.5"/>
+    <circle cx="380"  cy="80"  r="0.4" opacity="0.7"/>
+    <circle cx="460"  cy="50"  r="0.5" opacity="0.6"/>
+    <circle cx="540"  cy="100" r="0.3" opacity="0.5"/>
+    <circle cx="630"  cy="40"  r="0.6" opacity="0.6"/>
+    <circle cx="720"  cy="130" r="0.4" opacity="0.7"/>
+    <circle cx="810"  cy="70"  r="0.5" opacity="0.5"/>
+    <circle cx="900"  cy="120" r="0.4" opacity="0.6"/>
+    <circle cx="990"  cy="50"  r="0.6" opacity="0.7"/>
+    <circle cx="1080" cy="100" r="0.5" opacity="0.6"/>
+    <circle cx="1140" cy="140" r="0.3" opacity="0.5"/>
+    <circle cx="60"   cy="240" r="0.5" opacity="0.6"/>
+    <circle cx="180"  cy="290" r="0.4" opacity="0.5"/>
+    <circle cx="270"  cy="320" r="0.6" opacity="0.7"/>
+    <circle cx="370"  cy="280" r="0.4" opacity="0.6"/>
+    <circle cx="460"  cy="330" r="0.5" opacity="0.5"/>
+    <circle cx="580"  cy="300" r="0.3" opacity="0.7"/>
+    <circle cx="700"  cy="280" r="0.6" opacity="0.6"/>
+    <circle cx="800"  cy="320" r="0.4" opacity="0.5"/>
+    <circle cx="900"  cy="290" r="0.5" opacity="0.7"/>
+    <circle cx="1010" cy="330" r="0.4" opacity="0.6"/>
+    <circle cx="1100" cy="260" r="0.6" opacity="0.5"/>
+  </g>
+
+  <!-- Animated twinkling stars (brighter, larger) -->
+  <g fill="#ffffff">
+    <circle cx="140" cy="80" r="1.4">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="50" r="1.1">
+      <animate attributeName="opacity" values="0.2;0.95;0.2" dur="4.2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="610" cy="120" r="1.3">
+      <animate attributeName="opacity" values="0.1;1;0.1" dur="3.8s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="60" r="1.2">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4.6s" begin="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1060" cy="90" r="1.5">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.1s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="320" r="1.2">
+      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="5.1s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="280" r="1.3">
+      <animate attributeName="opacity" values="0.1;0.95;0.1" dur="3.9s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="310" r="1.1">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.5s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1020" cy="280" r="1.4">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="3.6s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Decorative corner brackets (gothic frame hint) -->
+  <g stroke="#3a0006" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 20 20 L 20 60 M 20 20 L 60 20"/>
+    <path d="M 1180 20 L 1180 60 M 1180 20 L 1140 20"/>
+    <path d="M 20 340 L 20 300 M 20 340 L 60 340"/>
+    <path d="M 1180 340 L 1180 300 M 1180 340 L 1140 340"/>
+  </g>
+
+  <!-- Main title with glow -->
+  <text x="600" y="195" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700"
+        fill="#c8c0b8" text-anchor="middle" letter-spacing="14" filter="url(#redGlow)">
+    亚历山大大帝
+  </text>
+
+  <!-- Title subtle breathing -->
+  <text x="600" y="195" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700"
+        fill="#c8c0b8" text-anchor="middle" letter-spacing="14" opacity="0.9">
+    亚历山大大帝
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Red blindfold across the eye-line of the title — chaotic, organic -->
+  <g filter="url(#rough)">
+    <rect x="290" y="148" width="620" height="42" fill="url(#bloodGrad)" opacity="0.9">
+      <animate attributeName="opacity" values="0.82;0.98;0.82" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tangled red threads woven on top of the blindfold -->
+  <g stroke="#d62246" stroke-width="1.1" fill="none" opacity="0.8" stroke-linecap="round">
+    <path d="M 295 158 Q 360 145, 420 162 T 540 152 T 660 168 T 780 154 T 905 162"/>
+    <path d="M 300 172 Q 380 185, 450 168 T 570 182 T 690 165 T 810 178 T 905 172" opacity="0.7"/>
+    <path d="M 305 180 Q 400 162, 470 184 T 590 168 T 710 186 T 825 170 T 900 184" opacity="0.65"/>
+    <path d="M 295 186 Q 370 170, 440 188 T 560 174 T 680 190 T 800 175 T 905 188" opacity="0.55"/>
+    <path d="M 310 152 Q 420 178, 490 154 T 610 180 T 730 156 T 850 180 T 900 154" opacity="0.5"/>
+  </g>
+
+  <!-- Splattered drops near blindfold -->
+  <g fill="#a30015">
+    <circle cx="270" cy="165" r="1.5" opacity="0.8"/>
+    <circle cx="265" cy="178" r="1" opacity="0.6"/>
+    <circle cx="935" cy="170" r="1.8" opacity="0.8"/>
+    <circle cx="942" cy="162" r="1" opacity="0.6"/>
+    <circle cx="950" cy="180" r="1.3" opacity="0.7"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="600" y="245" font-family="'Courier New', 'Consolas', monospace" font-size="15" font-weight="600"
+        fill="#8b0010" text-anchor="middle" letter-spacing="6">
+    SOFTWARE  ENGINEER  ◆  DEVOPS  ◆  INFRASTRUCTURE
+  </text>
+
+  <!-- Animated blood drips -->
+  <g fill="#a30015">
+    <ellipse cx="380" cy="285" rx="1.8" ry="6" opacity="0.55">
+      <animate attributeName="ry" values="4;12;4" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="278;292;278" dur="6s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="600" cy="285" rx="2" ry="8" opacity="0.65">
+      <animate attributeName="ry" values="6;16;6" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.9;0.35" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="278;294;278" dur="7.5s" begin="1.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="820" cy="285" rx="1.8" ry="7" opacity="0.55">
+      <animate attributeName="ry" values="5;13;5" dur="8s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="8s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="278;292;278" dur="8s" begin="2.8s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Username tag at bottom with separators -->
+  <g>
+    <line x1="450" y1="328" x2="540" y2="328" stroke="#3a0006" stroke-width="0.6"/>
+    <text x="600" y="332" font-family="'Courier New', 'Consolas', monospace" font-size="11" font-weight="500"
+          fill="#5a4a52" text-anchor="middle" letter-spacing="4">
+      @ A L E X X F R O M G I T
+    </text>
+    <line x1="660" y1="328" x2="750" y2="328" stroke="#3a0006" stroke-width="0.6"/>
+  </g>
+</svg>
