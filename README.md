@@ -21,7 +21,7 @@
   <img src="https://komarev.com/ghpvc/?username=Alexxfromgit&label=PROFILE+VIEWS&color=4a1e5c&style=for-the-badge" alt="profile views" />
   <img src="https://img.shields.io/github/followers/Alexxfromgit?label=FOLLOWERS&style=for-the-badge&color=8b0010&logo=github&logoColor=c8c0b8" alt="followers" />
   <img src="https://img.shields.io/github/stars/Alexxfromgit?label=STARS&style=for-the-badge&color=4a1e5c&logo=github&logoColor=c8c0b8" alt="stars" />
-  <img src="https://img.shields.io/badge/UKRAINE-%E2%9C%BF-8b0010?style=for-the-badge&logoColor=c8c0b8" alt="Ukraine" />
+  <img src="https://img.shields.io/badge/UGANDA-%E2%9C%BF-8b0010?style=for-the-badge&logoColor=c8c0b8" alt="Uganda" />
 </p>
 
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
@@ -37,7 +37,7 @@
 👤  identity:    Alexander
 💼  role:        Software Engineer In Test
 🏢  company:     Big Deals
-🌍  origin:      Ukraine 🇺🇦
+🌍  origin:      Uganda 🇺🇬
 🎯  focus:
       - Test Automation & QA Infrastructure
       - Configuration Management (SaltStack)
