@@ -27,7 +27,7 @@
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;About&nbsp;Me
+<h2 id="about-me">&nbsp;✦&nbsp;&nbsp;About&nbsp;Me</h2>
 
 <table>
 <tr>
@@ -64,13 +64,13 @@
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;Tech&nbsp;Stack
+<h2 id="tech-stack">&nbsp;✦&nbsp;&nbsp;Tech&nbsp;Stack</h2>
 
 <table align="center">
 <tr>
   <td valign="top" width="50%">
 
-#### &nbsp;✦&nbsp;&nbsp;Languages & Scripting
+<h3 id="languages-scripting">&nbsp;✦&nbsp;&nbsp;Languages & Scripting</h3>
 <p>
   <img src="https://img.shields.io/badge/Bash-0a0a0f?style=for-the-badge&logo=gnubash&logoColor=4EAA25" />
   <img src="https://img.shields.io/badge/Shell-0a0a0f?style=for-the-badge&logo=gnu-bash&logoColor=c8c0b8" />
@@ -79,7 +79,7 @@
   <img src="https://img.shields.io/badge/Markdown-0a0a0f?style=for-the-badge&logo=markdown&logoColor=c8c0b8" />
 </p>
 
-#### &nbsp;✦&nbsp;&nbsp;Operating Systems
+<h3 id="operating-systems">&nbsp;✦&nbsp;&nbsp;Operating Systems</h3>
 <p>
   <img src="https://img.shields.io/badge/Linux-0a0a0f?style=for-the-badge&logo=linux&logoColor=FCC624" />
   <img src="https://img.shields.io/badge/Ubuntu-0a0a0f?style=for-the-badge&logo=ubuntu&logoColor=E95420" />
@@ -91,7 +91,7 @@
   </td>
   <td valign="top" width="50%">
 
-#### &nbsp;✦&nbsp;&nbsp;DevOps & Infrastructure
+<h3 id="devops-infrastructure">&nbsp;✦&nbsp;&nbsp;DevOps & Infrastructure</h3>
 <p>
   <img src="https://img.shields.io/badge/SaltStack-0a0a0f?style=for-the-badge&logo=saltstack&logoColor=57BCAD" />
   <img src="https://img.shields.io/badge/Ansible-0a0a0f?style=for-the-badge&logo=ansible&logoColor=EE0000" />
@@ -100,7 +100,7 @@
   <img src="https://img.shields.io/badge/GitHub_Actions-0a0a0f?style=for-the-badge&logo=github-actions&logoColor=2088FF" />
 </p>
 
-#### &nbsp;✦&nbsp;&nbsp;Virtualization & Tools
+<h3 id="virtualization-tools">&nbsp;✦&nbsp;&nbsp;Virtualization & Tools</h3>
 <p>
   <img src="https://img.shields.io/badge/KVM-0a0a0f?style=for-the-badge&logo=linux&logoColor=c41e3a" />
   <img src="https://img.shields.io/badge/libvirt-0a0a0f?style=for-the-badge&logo=linux&logoColor=CC0000" />
@@ -116,7 +116,7 @@
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;GitHub&nbsp;in&nbsp;Numbers
+<h2 id="github-in-numbers">&nbsp;✦&nbsp;&nbsp;GitHub&nbsp;in&nbsp;Numbers</h2>
 
 <p align="center">
   <a href="https://github.com/Alexxfromgit">
@@ -155,7 +155,7 @@
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;Featured&nbsp;Projects
+<h2 id="featured-projects">&nbsp;✦&nbsp;&nbsp;Featured&nbsp;Projects</h2>
 
 <table>
 <tr>
@@ -202,14 +202,14 @@
   <ul>
     <li>🜔 &nbsp;<a href="https://github.com/Alexxfromgit/DevOps_Creating_a_topology_from_2x_VM"><b>VM Topology Builder</b></a> — bootstrapping a two-VM topology from scratch.</li>
     <li>🜚 &nbsp;<a href="https://github.com/Alexxfromgit/DevOps_Poor_Configuration_Management"><b>Poor Config Management</b> (Anti-pattern Lab)</a> — a teaching repo showing what <i>not</i> to do.</li>
-    <li>📜 &nbsp;Browse all <b>54 repositories</b> → <a href="https://github.com/Alexxfromgit?tab=repositories">github.com/Alexxfromgit?tab=repositories</a></li>
+    <li>📜 &nbsp;Browse all <a href="https://github.com/Alexxfromgit?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FAlexxfromgit&query=%24.public_repos&label=REPOSITORIES&style=for-the-badge&color=8b0010&logo=github&logoColor=c8c0b8" alt="repository count" valign="middle" /></a> → <a href="https://github.com/Alexxfromgit?tab=repositories">github.com/Alexxfromgit?tab=repositories</a></li>
   </ul>
 </details>
 
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;Achievements
+<h2 id="achievements">&nbsp;✦&nbsp;&nbsp;Achievements</h2>
 
 <table align="center">
 <tr><th>Sigil</th><th>Achievement</th><th>Description</th></tr>
@@ -220,7 +220,7 @@
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;Connect
+<h2 id="connect">&nbsp;✦&nbsp;&nbsp;Connect</h2>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/oleksandr-rubtsov/">
@@ -237,7 +237,7 @@
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
 
-## &nbsp;✦&nbsp;&nbsp;Thought&nbsp;of&nbsp;the&nbsp;Day
+<h2 id="thought-of-the-day">&nbsp;✦&nbsp;&nbsp;Thought&nbsp;of&nbsp;the&nbsp;Day</h2>
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula" alt="dev quote" />
