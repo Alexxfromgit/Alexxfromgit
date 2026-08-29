@@ -14,6 +14,12 @@ Internal notes for `README.md` and `assets/`, kept out of those files themselves
 
 No self-hosted replacement or refresh workflow exists for any of these.
 
+**Known outage (as of 2026-08-29):** `github-profile-trophy.vercel.app` and `github-readme-activity-graph.vercel.app` both return `HTTP 402 Payment Required` / `DEPLOYMENT_DISABLED` — the maintainers' Vercel deployments have been disabled (likely a free-tier usage quota issue), independent of this repo or GitHub account. `streak-stats.demolab.com` tested fine directly; if it also shows broken in the rendered profile, it's more likely a transient GitHub image-proxy (camo) cache issue than the service being down.
+
+Investigated self-hosting these two as a fix: no official self-host GitHub Action exists from either maintainer. The only trophy self-host Action found is on an **unmerged branch of an unofficial third-party fork** (`Erik-Donath/github-profile-trophy@feature/generate-svg`) — using it means trusting unreviewed code in CI, so it was not wired in. For the activity graph, self-hosting would require deploying the maintainer's server to your own infra (Vercel/Heroku), or writing a custom GraphQL-based chart generator from scratch — also not done.
+
+**Decision:** leave both pointed at the live (currently down) hosted URLs and wait for the upstream outage to resolve, rather than take on the fork-trust risk or build custom replacement tooling. Revisit if the outage persists long-term.
+
 ## Achievements table
 
 The Achievements table (`<h2 id="achievements">`) is hand-typed HTML, not a live badge — GitHub has no public API for profile achievements. Update it manually as new achievements are earned; nothing will flag it as stale.
