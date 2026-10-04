@@ -8,21 +8,21 @@ Internal notes for `README.md` and `assets/`, kept out of those files themselves
 
 - Animated tagline: `readme-typing-svg.demolab.com`
 - Profile badges row (profile views, followers, stars, repo-count): `komarev.com`, `img.shields.io`
-- "GitHub in Numbers": `github-profile-summary-cards.vercel.app`, `streak-stats.demolab.com`, `github-profile-trophy.vercel.app`, `github-readme-activity-graph.vercel.app`
+- "GitHub in Numbers": `github-profile-summary-cards.vercel.app`, `streak-stats.demolab.com`
 - "Thought of the Day": `quotes-github-readme.vercel.app`
 - Footer banner: `capsule-render.vercel.app`
 
 No self-hosted replacement or refresh workflow exists for any of these.
 
-**Known outage (as of 2026-08-29):** `github-profile-trophy.vercel.app` and `github-readme-activity-graph.vercel.app` both return `HTTP 402 Payment Required` / `DEPLOYMENT_DISABLED` — the maintainers' Vercel deployments have been disabled (likely a free-tier usage quota issue), independent of this repo or GitHub account. `streak-stats.demolab.com` tested fine directly; if it also shows broken in the rendered profile, it's more likely a transient GitHub image-proxy (camo) cache issue than the service being down.
+The trophy (`github-profile-trophy.vercel.app`) and contribution-graph (`github-readme-activity-graph.vercel.app`) widgets, along with the hand-typed Achievements table, were removed on 2026-10-04. Both widget hosts had been returning `HTTP 402 DEPLOYMENT_DISABLED` since at least 2026-08-29, and no trustworthy self-host option existed.
 
-Investigated self-hosting these two as a fix: no official self-host GitHub Action exists from either maintainer. The only trophy self-host Action found is on an **unmerged branch of an unofficial third-party fork** (`Erik-Donath/github-profile-trophy@feature/generate-svg`) — using it means trusting unreviewed code in CI, so it was not wired in. For the activity graph, self-hosting would require deploying the maintainer's server to your own infra (Vercel/Heroku), or writing a custom GraphQL-based chart generator from scratch — also not done.
+## Tech Stack
 
-**Decision:** leave both pointed at the live (currently down) hosted URLs and wait for the upstream outage to resolve, rather than take on the fork-trust risk or build custom replacement tooling. Revisit if the outage persists long-term.
+The Tech Stack badges are hand-curated. They were last rebuilt on 2026-10-04 from the repos with real commit activity in the preceding 12 months: .NET/MAUI/WinUI apps, MCP servers, native iOS (SwiftUI) and Android (Compose) apps, Cloudflare Workers sites, Java/.NET test frameworks, and Rust. Many older repos show a 2026-05-09/10 `pushedAt` that is only a bulk metadata touch-up, not real work. Some tools have no shields.io logo (PowerShell, TestNG, NUnit, FlaUI, WinAppDriver, SpecFlow, REST Assured, WireMock, Allure, Multi-Agent Pipelines, COM Automation), so their badges are text-only on purpose. The About Me profile table repeats a subset of these as smaller `flat-square` badges, so update both together.
 
-## Achievements table
+## Featured Projects showcase
 
-The Achievements table (`<h2 id="achievements">`) is hand-typed HTML, not a live badge — GitHub has no public API for profile achievements. Update it manually as new achievements are earned; nothing will flag it as stale.
+The Featured Projects image grid uses local social-preview JPGs in `assets/projects/`, hand-wired to repo URLs in `README.md`. Adding a repo means committing its preview image and adding a card manually. Each group ends with a `colspan="2"` card at `width="50%"` when it has an odd number of items, so it stays centered at the same size as the others.
 
 ## Hero banner CJK glyph risk
 
