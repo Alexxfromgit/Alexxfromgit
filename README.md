@@ -145,6 +145,17 @@
   <img src="https://img.shields.io/badge/Allure-0a0a0f?style=for-the-badge&logoColor=c41e3a" />
 </p>
 
+<h3 id="build-delivery">&nbsp;✦&nbsp;&nbsp;Build & Delivery</h3>
+<p>
+  <img src="https://img.shields.io/badge/GitHub_Actions-0a0a0f?style=for-the-badge&logo=githubactions&logoColor=2088FF" />
+  <img src="https://img.shields.io/badge/Maven-0a0a0f?style=for-the-badge&logo=apachemaven&logoColor=C71A36" />
+  <img src="https://img.shields.io/badge/Gradle-0a0a0f?style=for-the-badge&logo=gradle&logoColor=c8c0b8" />
+  <img src="https://img.shields.io/badge/NuGet-0a0a0f?style=for-the-badge&logo=nuget&logoColor=004880" />
+  <img src="https://img.shields.io/badge/Cargo-0a0a0f?style=for-the-badge&logo=rust&logoColor=c8c0b8" />
+  <img src="https://img.shields.io/badge/Xcode-0a0a0f?style=for-the-badge&logo=xcode&logoColor=147EFB" />
+  <img src="https://img.shields.io/badge/Android_Studio-0a0a0f?style=for-the-badge&logo=androidstudio&logoColor=3DDC84" />
+</p>
+
   </td>
   <td valign="top" width="50%">
 
@@ -176,7 +187,7 @@
   <img src="https://img.shields.io/badge/Cloudflare_Workers-0a0a0f?style=for-the-badge&logo=cloudflareworkers&logoColor=F38020" />
   <img src="https://img.shields.io/badge/D1_%C2%B7_R2-0a0a0f?style=for-the-badge&logo=cloudflare&logoColor=F38020" />
   <img src="https://img.shields.io/badge/Hono-0a0a0f?style=for-the-badge&logo=hono&logoColor=E36002" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-0a0a0f?style=for-the-badge&logo=githubactions&logoColor=2088FF" />
+  <img src="https://img.shields.io/badge/SQLite-0a0a0f?style=for-the-badge&logo=sqlite&logoColor=4FA3D9" />
   <img src="https://img.shields.io/badge/Git-0a0a0f?style=for-the-badge&logo=git&logoColor=F05032" />
   <img src="https://img.shields.io/badge/Rider-0a0a0f?style=for-the-badge&logo=rider&logoColor=c8c0b8" />
 </p>
@@ -316,20 +327,6 @@
     <li>📜 &nbsp;Browse all <a href="https://github.com/Alexxfromgit?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FAlexxfromgit&query=%24.public_repos&label=REPOSITORIES&style=for-the-badge&color=8b0010&logo=github&logoColor=c8c0b8" alt="repository count" valign="middle" /></a> → <a href="https://github.com/Alexxfromgit?tab=repositories">github.com/Alexxfromgit?tab=repositories</a></li>
   </ul>
 </details>
-
-<!-- ───────────────  SECTION DIVIDER  ─────────────── -->
-<p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
-
-<h2 id="connect">&nbsp;✦&nbsp;&nbsp;Connect</h2>
-
-<p align="center">
-  <a href="https://github.com/Alexxfromgit">
-    <img src="https://img.shields.io/badge/GitHub-0a0a0f?style=for-the-badge&logo=github&logoColor=c8c0b8" alt="GitHub" />
-  </a>
-  <a href="https://github.com/Alexxfromgit?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-0a0a0f?style=for-the-badge&logo=git&logoColor=8b3aae" alt="Repositories" />
-  </a>
-</p>
 
 <!-- ───────────────  SECTION DIVIDER  ─────────────── -->
 <p align="center"><img src="./assets/blood-divider.svg" alt="" width="100%" /></p>
